@@ -1,0 +1,24 @@
+
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog-dev?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: admin123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    #??SQL??????
+    show-sql: true
+    #关闭一个警告
+    open-in-view: false
+logging:
+  level:
+    root: info
+    com.blogfirsttry: debug
+  file:
+    path: log/blog-dev.log
+server:
+  port: 8080

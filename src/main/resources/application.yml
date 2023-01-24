@@ -1,0 +1,9 @@
+
+spring:
+  profiles:
+    active: dev
+  web:
+    resources:
+      add-mappings: true
+#  mvc:
+#    static-path-pattern: /static/**

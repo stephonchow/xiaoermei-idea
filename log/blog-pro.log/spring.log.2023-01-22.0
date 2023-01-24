@@ -1,0 +1,5 @@
+2023-01-22 20:55:07.093  INFO 65464 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Starting BlogFirstTryApplication using Java 1.8.0_311 on LAPTOP-61FD8MJ5 with PID 65464 (D:\IDEA\ideaProject\blog-First-Try\target\classes started by 拓森 in D:\IDEA\ideaProject\blog-First-Try)
+2023-01-22 20:55:07.094  INFO 65464 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : The following 1 profile is active: "pro"
+2023-01-22 20:55:08.592  WARN 65464 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-22 20:55:08.774  WARN 65464 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-01-22 20:55:08.892  INFO 65464 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Started BlogFirstTryApplication in 2.135 seconds (JVM running for 2.918)
