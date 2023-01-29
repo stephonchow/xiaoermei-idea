@@ -1,9 +1,13 @@
 package com.blogfirsttry.po;
-//import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * Created by limi on 2017/10/14.
+ */
 @Entity
 @Table(name = "t_type")
 public class Type {
@@ -11,11 +15,10 @@ public class Type {
     @Id
     @GeneratedValue
     private Long id;
-//    @NotBlank(message = "分类名称不能为空")
+    @NotBlank(message = "分类名称不能为空")
     private String name;
 
-    @OneToMany(mappedBy = "type")//一个分类对应多个博客
-    //mappedBy = "type"指明是被维护的一端
+    @OneToMany(mappedBy = "type")
     private List<Blog> blogs = new ArrayList<>();
 
     public Type() {

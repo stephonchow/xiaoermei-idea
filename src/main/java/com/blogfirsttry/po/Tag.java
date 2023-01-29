@@ -1,11 +1,14 @@
 package com.blogfirsttry.po;
 
+import org.hibernate.annotations.Proxy;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "t_tag")
+@Proxy(lazy = false)
 public class Tag {
 
     @Id
@@ -13,7 +16,7 @@ public class Tag {
     private Long id;
     private String name;
 
-    @ManyToMany(mappedBy = "tags")//被维护关系
+    @ManyToMany(mappedBy = "tags", fetch = FetchType.EAGER)//被维护关系
     private List<Blog> blogs = new ArrayList<>();
 
     public Tag() {
