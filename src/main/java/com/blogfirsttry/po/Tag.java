@@ -17,6 +17,7 @@ public class Tag {
     private String name;
 
     @ManyToMany(mappedBy = "tags", fetch = FetchType.EAGER)//被维护关系
+//    @ManyToMany(mappedBy = "tags")
     private List<Blog> blogs = new ArrayList<>();
 
     public Tag() {

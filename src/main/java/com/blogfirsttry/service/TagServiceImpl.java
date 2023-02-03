@@ -2,6 +2,7 @@ package com.blogfirsttry.service;
 import com.blogfirsttry.NotFoundException;
 import com.blogfirsttry.dao.TagRepository;
 import com.blogfirsttry.po.Tag;
+import org.hibernate.annotations.Proxy;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -13,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 @Service
 public class TagServiceImpl implements TagService {
@@ -59,7 +61,7 @@ public class TagServiceImpl implements TagService {
     public List<Tag> listTag(String ids) { //1,2,3
         return tagRepository.findAllById(convertToList(ids));
     }
-
+//    把字符串转换为数组
     private List<Long> convertToList(String ids) {
         List<Long> list = new ArrayList<>();
         if (!"".equals(ids) && ids != null) {
@@ -90,4 +92,20 @@ public class TagServiceImpl implements TagService {
     public void deleteTag(Long id) {
         tagRepository.deleteById(id);
     }
+
+//    public List<Tag> matchTag(String ids) {
+//        List<Tag> tags=new ArrayList<>();
+//        Pattern pattern = Pattern.compile("【0-9】+");
+//        for (String s:toSList(ids)) {
+//            if (pattern.matcher(s).matches()){
+//                tags.add(tagRepository.getOne(Long.valueOf(s)));
+//            }else{
+//                Tag tag=new Tag();
+//                tag.setName(s);
+//                tagRepository.save(tag);
+//                tags.add(tagRepository.findByName(s));
+//            }
+//        }
+//        return tags;
+//    }
 }

@@ -1,5 +1,7 @@
 package com.blogfirsttry.po;
 
+import org.hibernate.annotations.Proxy;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,14 +9,15 @@ import java.util.List;
 
 @Entity//添加这行才具备和数据库对应生成的能力
 @Table(name = "t_blog")
+@Proxy(lazy = false)//关闭懒加载
 public class Blog {
 
     @Id//主键
     @GeneratedValue//自动生成
     private Long id;
     private String title;//标题
-//    @Basic(fetch = FetchType.LAZY)
-//    @Lob
+    @Basic(fetch = FetchType.LAZY)//懒加载
+    @Lob//添加这个注解让content容量变得足够大
     private String content;//博客内容
     private String firstPicture;//首图
     private String flag;//标记
@@ -33,7 +36,8 @@ public class Blog {
     //many的那端是关系维护端
     private Type type;
 //
-    @ManyToMany(cascade = {CascadeType.PERSIST})
+//    @ManyToMany(cascade = {CascadeType.MERGE})
+    @ManyToMany(fetch = FetchType.EAGER)
     //博客和标签是多对多，并且由blog维护
     //添加cascade = {CascadeType.PERSIST}后新增
     // 一个tag，会将该tag添加到数据库
@@ -46,8 +50,8 @@ public class Blog {
     @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();
 //
-//    @Transient
-//    private String tagIds;
+    @Transient
+    private String tagIds;
 //
 //    private String description;
 //
@@ -193,13 +197,13 @@ public class Blog {
     }
 //
 //
-//    public String getTagIds() {
-//        return tagIds;
-//    }
+    public String getTagIds() {
+        return tagIds;
+    }
 //
-//    public void setTagIds(String tagIds) {
-//        this.tagIds = tagIds;
-//    }
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
+    }
 //
 //    public String getDescription() {
 //        return description;
@@ -209,28 +213,28 @@ public class Blog {
 //        this.description = description;
 //    }
 //
-//    public void init() {
-//        this.tagIds = tagsToIds(this.getTags());
-//    }
+    public void initTags() {
+        this.tagIds = tagsToIds(this.getTags());
+    }
 //
 //    //1,2,3
-//    private String tagsToIds(List<Tag> tags) {
-//        if (!tags.isEmpty()) {
-//            StringBuffer ids = new StringBuffer();
-//            boolean flag = false;
-//            for (Tag tag : tags) {
-//                if (flag) {
-//                    ids.append(",");
-//                } else {
-//                    flag = true;
-//                }
-//                ids.append(tag.getId());
-//            }
-//            return ids.toString();
-//        } else {
-//            return tagIds;
-//        }
-//    }
+    private String tagsToIds(List<Tag> tags) {
+        if (!tags.isEmpty()) {
+            StringBuffer ids = new StringBuffer();
+            boolean flag = false;
+            for (Tag tag : tags) {
+                if (flag) {
+                    ids.append(",");
+                } else {
+                    flag = true;
+                }
+                ids.append(tag.getId());
+            }
+            return ids.toString();
+        } else {
+            return tagIds;
+        }
+    }
 //
 //
     @Override
