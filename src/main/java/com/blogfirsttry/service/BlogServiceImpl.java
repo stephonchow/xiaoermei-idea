@@ -3,6 +3,8 @@ import com.blogfirsttry.NotFoundException;
 import com.blogfirsttry.dao.BlogRepository;
 import com.blogfirsttry.po.Blog;
 import com.blogfirsttry.po.Type;
+import com.blogfirsttry.util.MarkdownUtils;
+import com.blogfirsttry.util.MyBeanUtils;
 import com.blogfirsttry.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,21 +28,22 @@ public class BlogServiceImpl implements BlogService {
     public Blog getBlog(Long id) {
         return blogRepository.getOne(id);
     }
-//    @Transactional
-//    @Override
-//    public Blog getAndConvert(Long id) {
-//        Blog blog = blogRepository.getOne(id);
-//        if (blog == null) {
-//            throw new NotFoundException("该博客不存在");
-//        }
-//        Blog b = new Blog();
-//        BeanUtils.copyProperties(blog,b);
-//        String content = b.getContent();
-//        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
-//
+    //获取并转换，Markdown转换为HTML
+    @Transactional
+    @Override
+    public Blog getAndConvert(Long id) {
+        Blog blog = blogRepository.getOne(id);
+        if (blog == null) {
+            throw new NotFoundException("博客不存在");
+        }
+        Blog b = new Blog();//new一个新的，防止把数据库中的数据改变
+        BeanUtils.copyProperties(blog,b);
+        String content = b.getContent();
+        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+
 //        blogRepository.updateViews(id);
-//        return b;
-//    }
+        return b;
+    }
 
 
     @Override
@@ -67,10 +70,10 @@ public class BlogServiceImpl implements BlogService {
         },pageable);
     }
 
-//    @Override
-//    public Page<Blog> listBlog(Pageable pageable) {
-//        return blogRepository.findAll(pageable);
-//    }
+    @Override
+    public Page<Blog> listBlog(Pageable pageable) {
+        return blogRepository.findAll(pageable);
+    }
 //
 //    @Override
 //    public Page<Blog> listBlog(Long tagId, Pageable pageable) {
@@ -83,17 +86,16 @@ public class BlogServiceImpl implements BlogService {
 //        },pageable);
 //    }
 //
-//    @Override
-//    public Page<Blog> listBlog(String query, Pageable pageable) {
-//        return blogRepository.findByQuery(query,pageable);
-//    }
+    @Override
+    public Page<Blog> listBlog(String query, Pageable pageable) {
+        return blogRepository.findByQuery(query,pageable);
+    }
 //
-//    @Override
-//    public List<Blog> listRecommendBlogTop(Integer size) {
-//        Sort sort = new Sort(Sort.Direction.DESC,"updateTime");
-//        Pageable pageable = new PageRequest(0, size, sort);
-//        return blogRepository.findTop(pageable);
-//    }
+    @Override
+    public List<Blog> listRecommendBlogTop(Integer size) {
+        Pageable pageable = PageRequest.of(0, size, Sort.by(Sort.Direction.DESC, "updateTime"));
+        return blogRepository.findTop(pageable);
+    }
 //
 //    @Override
 //    public Map<String, List<Blog>> archiveBlog() {
@@ -131,8 +133,9 @@ public class BlogServiceImpl implements BlogService {
         if (b == null) {
             throw new NotFoundException("该博客不存在");
         }
-        BeanUtils.copyProperties(b,blog);
-//        BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
+//        BeanUtils.copyProperties(b,blog);
+        BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
+//        过滤掉为空的属性，save方法保存已有的值
         b.setUpdateTime(new Date());
         return blogRepository.save(b);
     }

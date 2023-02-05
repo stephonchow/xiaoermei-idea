@@ -14,8 +14,8 @@ public interface BlogRepository extends JpaRepository<Blog, Long>, JpaSpecificat
 
     @Query("select b from Blog b where b.recommend = true")
     List<Blog> findTop(Pageable pageable);
-
-    @Query("select b from Blog b where b.title like ?1 or b.content like ?1")
+//    搜索的jpa层实现，这里的query取自前端的搜索框的输入，like ?1 就是根据第一个参数即query进行 like 查询
+    @Query("select b from Blog b where b.title like ?1 or b.description like ?1")
     Page<Blog> findByQuery(String query,Pageable pageable);
 
 
@@ -24,8 +24,8 @@ public interface BlogRepository extends JpaRepository<Blog, Long>, JpaSpecificat
     @Query("update Blog b set b.views = b.views+1 where b.id = ?1")
     int updateViews(Long id);
 
-    @Query("select function('date_format',b.updateTime,'%Y') as year from Blog b group by function('date_format',b.updateTime,'%Y') order by year desc ")
-    List<String> findGroupYear();
+//    @Query("select function('date_format',b.updateTime,'%Y') as year from Blog b group by function('date_format',b.updateTime,'%Y') order by year desc ")
+//    List<String> findGroupYear();
 
     @Query("select b from Blog b where function('date_format',b.updateTime,'%Y') = ?1")
     List<Blog> findByYear(String year);

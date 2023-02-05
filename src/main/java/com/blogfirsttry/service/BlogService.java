@@ -10,19 +10,19 @@ import java.util.Map;
 public interface BlogService {
     //根据id查询blog
     Blog getBlog(Long id);
-
-//    Blog getAndConvert(Long id);
+//获取并转换，Markdown转换为HTML
+    Blog getAndConvert(Long id);
 
 //    Page<Blog> listBlog(Pageable pageable,BlogQuery blog);
 //    分页查询
     Page<Blog> listBlog(Pageable pageable, BlogQuery blog);
-//    Page<Blog> listBlog(Pageable pageable);
+    Page<Blog> listBlog(Pageable pageable);
 
 //    Page<Blog> listBlog(Long tagId,Pageable pageable);
 
-//    Page<Blog> listBlog(String query,Pageable pageable);
+    Page<Blog> listBlog(String query,Pageable pageable);
 
-//    List<Blog> listRecommendBlogTop(Integer size);
+    List<Blog> listRecommendBlogTop(Integer size);
 
 //    Map<String,List<Blog>> archiveBlog();
 

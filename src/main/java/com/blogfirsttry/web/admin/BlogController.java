@@ -67,11 +67,11 @@ public class BlogController {
         blog.setType(typeService.getType(blog.getType().getId()));
         blog.setTags(tagService.listTag(blog.getTagIds()));
         Blog b;
-//        if (blog.getId() == null) {
+        if (blog.getId() == null) {//如果博客未有
             b =  blogService.saveBlog(blog);
-//        } else {
-//            b = blogService.updateBlog(blog.getId(), blog);
-//        }
+        } else {//如果博客已有
+            b = blogService.updateBlog(blog.getId(), blog);
+        }
 //
         if (b == null ) {
             attributes.addFlashAttribute("message", "操作失败");
