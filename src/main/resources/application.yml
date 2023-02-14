@@ -5,5 +5,6 @@ spring:
   web:
     resources:
       add-mappings: true
+comment.avatar: /images/user.png
 #  mvc:
 #    static-path-pattern: /static/**

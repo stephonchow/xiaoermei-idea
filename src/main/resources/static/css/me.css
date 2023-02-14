@@ -146,7 +146,9 @@ body {
 .m-black {
     color: #333 !important;
 }
-
+.m-blue{
+    color:#2185D0!important;
+}
 .m-mobile-show {
    display: none !important;
 }

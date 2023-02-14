@@ -21,7 +21,7 @@ public class Comment {
     @ManyToOne//关系维护方，评论和博客绑定
     private Blog blog;
 
-    @OneToMany(mappedBy = "parentComment")//comment与comment的关系
+    @OneToMany(mappedBy = "parentComment",fetch = FetchType.EAGER)//comment与comment的关系
     private List<Comment> replyComments = new ArrayList<>();
 
     @ManyToOne//关系维护方，与父级评论绑定

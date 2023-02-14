@@ -31,7 +31,7 @@ public class Blog {
     private Date createTime;//创建事件
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;//更新时间
-//
+    private boolean adminComment;
     @ManyToOne//多个博客对应一个分类
     //many的那端是关系维护端
     private Type type;
@@ -235,8 +235,18 @@ public class Blog {
             return tagIds;
         }
     }
+
+    public boolean isAdminComment() {
+        return adminComment;
+    }
+
+    public void setAdminComment(boolean adminComment) {
+        this.adminComment = adminComment;
+    }
+
+    //
 //
-//
+
     @Override
     public String toString() {
         return "Blog{" +
@@ -253,6 +263,7 @@ public class Blog {
                 ", recommend=" + recommend +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", adminComment=" + adminComment +
                 ", type=" + type +
                 ", tags=" + tags +
                 ", user=" + user +

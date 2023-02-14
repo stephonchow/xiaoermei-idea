@@ -41,7 +41,7 @@ public class BlogServiceImpl implements BlogService {
         String content = b.getContent();
         b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
 
-//        blogRepository.updateViews(id);
+        blogRepository.updateViews(id);
         return b;
     }
 
@@ -75,16 +75,16 @@ public class BlogServiceImpl implements BlogService {
         return blogRepository.findAll(pageable);
     }
 //
-//    @Override
-//    public Page<Blog> listBlog(Long tagId, Pageable pageable) {
-//        return blogRepository.findAll(new Specification<Blog>() {
-//            @Override
-//            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
-//                Join join = root.join("tags");
-//                return cb.equal(join.get("id"),tagId);
-//            }
-//        },pageable);
-//    }
+    @Override
+    public Page<Blog> listBlog(Long tagId, Pageable pageable) {
+        return blogRepository.findAll(new Specification<Blog>() {
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+                Join join = root.join("tags");
+                return cb.equal(join.get("id"),tagId);
+            }
+        },pageable);
+    }
 //
     @Override
     public Page<Blog> listBlog(String query, Pageable pageable) {
