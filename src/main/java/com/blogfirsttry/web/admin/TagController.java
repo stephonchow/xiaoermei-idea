@@ -88,6 +88,4 @@ public class TagController {
         attributes.addFlashAttribute("message", "删除成功");
         return "redirect:/admin/tags";
     }
-
-
 }

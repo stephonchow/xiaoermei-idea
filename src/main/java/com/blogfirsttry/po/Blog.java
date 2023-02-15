@@ -19,7 +19,6 @@ public class Blog {
     @Basic(fetch = FetchType.LAZY)//懒加载
     @Lob//添加这个注解让content容量变得足够大
     private String content;//博客内容
-    private String firstPicture;//首图
     private String flag;//标记
     private Integer views;//浏览量
     private boolean appreciation;//赞赏开关
@@ -80,14 +79,6 @@ public class Blog {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public String getFirstPicture() {
-        return firstPicture;
-    }
-
-    public void setFirstPicture(String firstPicture) {
-        this.firstPicture = firstPicture;
     }
 
     public String getFlag() {
@@ -253,7 +244,6 @@ public class Blog {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
-                ", firstPicture='" + firstPicture + '\'' +
                 ", flag='" + flag + '\'' +
                 ", views=" + views +
                 ", appreciation=" + appreciation +
