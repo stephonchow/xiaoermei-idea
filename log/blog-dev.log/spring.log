@@ -1,38 +1,141 @@
-2023-02-15 20:39:02.058  INFO 17724 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Starting BlogFirstTryApplication using Java 1.8.0_311 on LAPTOP-61FD8MJ5 with PID 17724 (D:\IDEA\ideaProject\blog-First-Try\target\classes started by 拓森 in D:\IDEA\ideaProject\blog-First-Try)
-2023-02-15 20:39:02.060 DEBUG 17724 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
-2023-02-15 20:39:02.061  INFO 17724 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : The following 1 profile is active: "dev"
-2023-02-15 20:39:02.105  INFO 17724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-02-15 20:39:02.105  INFO 17724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-02-15 20:39:02.640  INFO 17724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-02-15 20:39:02.693  INFO 17724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 5 JPA repository interfaces.
-2023-02-15 20:39:03.324  INFO 17724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-02-15 20:39:03.331  INFO 17724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-02-15 20:39:03.331  INFO 17724 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2023-02-15 20:39:03.394  INFO 17724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-02-15 20:39:03.395  INFO 17724 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1289 ms
-2023-02-15 20:39:03.521  INFO 17724 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-02-15 20:39:03.556  INFO 17724 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-02-15 20:39:03.659  INFO 17724 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-02-15 20:39:03.721  INFO 17724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-02-15 20:39:03.822  INFO 17724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-02-15 20:39:03.836  INFO 17724 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-02-15 20:39:04.422  INFO 17724 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-02-15 20:39:04.428  INFO 17724 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-02-15 20:39:06.079  INFO 17724 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-02-15 20:39:06.909  INFO 17724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-02-15 20:39:06.993  INFO 17724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-02-15 20:39:07.013  INFO 17724 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Started BlogFirstTryApplication in 5.33 seconds (JVM running for 6.25)
-2023-02-15 20:39:15.075  INFO 17724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-02-15 20:39:15.075  INFO 17724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-02-15 20:39:15.076  INFO 17724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-02-15 20:39:15.106  INFO 17724 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
-2023-02-15 20:39:15.197  WARN 17724 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2023-02-15 20:39:15.240  WARN 17724 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2023-02-15 20:39:15.270  INFO 17724 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
-2023-02-15 20:39:15.270  INFO 17724 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:39:15.582 ERROR 17724 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+2023-03-21 00:06:38.128  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:06:38.147  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:06:38.147  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:06:38.634  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:06:38.699  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:06:38.699  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:08:54.556  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:08:54.573  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:08:54.574  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:08:55.036  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:08:55.099  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:08:55.099  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:10:43.391  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:10:43.409  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:10:43.409  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:10:43.874  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:10:43.957  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:10:43.957  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:12:02.146  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:12:02.161  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:12:02.162  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:12:02.575  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:12:02.637  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:12:02.637  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:12:29.824  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:12:29.840  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:12:29.840  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:12:30.286  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:12:30.337  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:12:30.338  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:13:00.175  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:13:00.190  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:13:00.190  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:13:00.656  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:13:00.711  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:13:00.711  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:36:04.675  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:36:04.692  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:36:04.693  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:36:05.111  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:36:05.167  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:36:05.167  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:36:44.772  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:36:44.783  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:36:44.783  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:36:45.190  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:36:45.239  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:36:45.240  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:37:07.501  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:37:07.515  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:37:07.515  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:37:07.760  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:37:07.792  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:37:07.792  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:37:18.979  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:37:18.989  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:37:18.989  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:37:19.215  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:37:19.250  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:37:19.250  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:38:36.197  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:38:36.209  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:38:36.209  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:38:36.432  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:38:36.467  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:38:36.467  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:40:33.028  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:40:33.044  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:40:33.044  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:40:33.547  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:40:33.587  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:40:33.587  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:41:37.271  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:41:37.285  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:41:37.285  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:41:37.709  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:41:37.755  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:41:37.755  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:42:25.868  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:42:25.885  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:42:25.886  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:42:26.467  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:42:26.531  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:42:26.531  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:42:54.659  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:42:54.680  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:42:54.680  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:42:55.206  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:42:55.278  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:42:55.279  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:44:10.864  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:44:10.880  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:44:10.881  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:44:11.351  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:44:11.400  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:44:11.400  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:44:46.363  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:44:46.373  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:44:46.373  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:44:46.806  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:44:46.852  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:44:46.852  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:46:26.819  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:46:26.830  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:46:26.831  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:46:27.065  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:46:27.092  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:46:27.092  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:47:17.446  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:47:17.461  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:47:17.461  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:47:18.048  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:47:18.110  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:47:18.110  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:47:51.132  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:47:51.142  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:47:51.142  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:47:51.553  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:47:51.587  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:47:51.587  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:49:57.949  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:49:57.958  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:49:57.959  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:49:58.370  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:49:58.409  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:49:58.409  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:51:01.979  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:51:01.990  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:51:01.990  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:51:02.382  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:51:02.424  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:51:02.425  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:55:11.301  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:55:11.331  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:55:11.332  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:55:11.344 ERROR 37404 --- [http-nio-8080-exec-8] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-8] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
 	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
@@ -82,93 +185,85 @@ org.thymeleaf.exceptions.TemplateInputException: An error happened during templa
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "blog.firstPicture" (template: "index" - line 86, col 88)
+Caused by: org.attoparser.ParseException: An error happened during template parsing (template: "class path resource [templates/blog.html]" - line 60, col 93)
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
 	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
 	... 48 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.firstPicture" (template: "index" - line 86, col 88)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]" - line 60, col 93)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
 	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
 	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
 	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
-	at org.thymeleaf.engine.Model.process(Model.java:282)
-	at org.thymeleaf.engine.Model.process(Model.java:290)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
-	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
-	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
-	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
-	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
 	... 50 common frames omitted
-Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstPicture' cannot be found on object of type 'com.blogfirsttry.po.Blog' - maybe not public or not valid?
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	... 79 common frames omitted
+Caused by: org.attoparser.ParseException: (Line = 60, Column = 93) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 76 common frames omitted
 
-2023-02-15 20:39:15.585 ERROR 17724 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+2023-03-21 00:55:11.348 ERROR 37404 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
 
-org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstPicture' cannot be found on object of type 'com.blogfirsttry.po.Blog' - maybe not public or not valid?
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+org.attoparser.ParseException: (Line = 60, Column = 93) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
 	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
 	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
 	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
-	at org.thymeleaf.engine.Model.process(Model.java:282)
-	at org.thymeleaf.engine.Model.process(Model.java:290)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
-	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
-	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
-	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
-	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
 	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
@@ -221,15 +316,12 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2023-02-15 20:41:49.383  INFO 17724 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
-2023-02-15 20:41:49.462  INFO 17724 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
-2023-02-15 20:41:49.463  INFO 17724 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:41:56.702  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TypeShowController.types', args=[Page request [number: 0, size 4, sort: updateTime: DESC], -1, {}]}
-2023-02-15 20:41:56.748  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: types
-2023-02-15 20:41:56.748  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:41:56.765 ERROR 17724 --- [http-nio-8080-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-5] Exception processing template "types": An error happened during template parsing (template: "class path resource [templates/types.html]")
+2023-03-21 00:55:13.121  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:55:13.136  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:55:13.136  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:55:13.138 ERROR 37404 --- [http-nio-8080-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-4] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/types.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
 	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
@@ -279,93 +371,85 @@ org.thymeleaf.exceptions.TemplateInputException: An error happened during templa
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "blog.firstPicture" (template: "types" - line 88, col 65)
+Caused by: org.attoparser.ParseException: An error happened during template parsing (template: "class path resource [templates/blog.html]" - line 60, col 93)
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
 	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
 	... 48 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.firstPicture" (template: "types" - line 88, col 65)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]" - line 60, col 93)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
 	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
 	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
 	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
-	at org.thymeleaf.engine.Model.process(Model.java:282)
-	at org.thymeleaf.engine.Model.process(Model.java:290)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
-	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
-	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
-	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
-	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
 	... 50 common frames omitted
-Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstPicture' cannot be found on object of type 'com.blogfirsttry.po.Blog' - maybe not public or not valid?
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	... 79 common frames omitted
+Caused by: org.attoparser.ParseException: (Line = 60, Column = 93) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 76 common frames omitted
 
-2023-02-15 20:41:56.779 ERROR 17724 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/types.html]")] with root cause
+2023-03-21 00:55:13.138 ERROR 37404 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
 
-org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstPicture' cannot be found on object of type 'com.blogfirsttry.po.Blog' - maybe not public or not valid?
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+org.attoparser.ParseException: (Line = 60, Column = 93) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
 	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
 	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
 	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
-	at org.thymeleaf.engine.Model.process(Model.java:282)
-	at org.thymeleaf.engine.Model.process(Model.java:290)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
-	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
-	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
-	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
-	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
 	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
@@ -418,15 +502,12 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2023-02-15 20:43:05.134  INFO 17724 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TypeShowController.types', args=[Page request [number: 0, size 4, sort: updateTime: DESC], -1, {}]}
-2023-02-15 20:43:05.169  INFO 17724 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: types
-2023-02-15 20:43:05.169  INFO 17724 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:43:07.554  INFO 17724 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
-2023-02-15 20:43:07.590  INFO 17724 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: tags
-2023-02-15 20:43:07.590  INFO 17724 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:43:07.599 ERROR 17724 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "tags": An error happened during template parsing (template: "class path resource [templates/tags.html]")
+2023-03-21 00:55:17.299  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:55:17.317  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:55:17.317  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:55:17.320 ERROR 37404 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/tags.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
 	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
@@ -476,93 +557,85 @@ org.thymeleaf.exceptions.TemplateInputException: An error happened during templa
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "blog.firstPicture" (template: "tags" - line 94, col 65)
+Caused by: org.attoparser.ParseException: An error happened during template parsing (template: "class path resource [templates/blog.html]" - line 60, col 93)
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
 	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
 	... 48 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.firstPicture" (template: "tags" - line 94, col 65)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]" - line 60, col 93)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
 	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
 	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
 	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
-	at org.thymeleaf.engine.Model.process(Model.java:282)
-	at org.thymeleaf.engine.Model.process(Model.java:290)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
-	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
-	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
-	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
-	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
 	... 50 common frames omitted
-Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstPicture' cannot be found on object of type 'com.blogfirsttry.po.Blog' - maybe not public or not valid?
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	... 79 common frames omitted
+Caused by: org.attoparser.ParseException: (Line = 60, Column = 93) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 76 common frames omitted
 
-2023-02-15 20:43:07.600 ERROR 17724 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/tags.html]")] with root cause
+2023-03-21 00:55:17.320 ERROR 37404 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
 
-org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstPicture' cannot be found on object of type 'com.blogfirsttry.po.Blog' - maybe not public or not valid?
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+org.attoparser.ParseException: (Line = 60, Column = 93) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
 	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529)
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471)
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
 	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
 	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
 	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
-	at org.thymeleaf.engine.Model.process(Model.java:282)
-	at org.thymeleaf.engine.Model.process(Model.java:290)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
-	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
-	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
-	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
-	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
 	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
 	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
@@ -615,304 +688,135 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2023-02-15 20:43:48.909  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
-2023-02-15 20:43:48.931  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: tags
-2023-02-15 20:43:48.931  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:43:50.207  INFO 17724 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.AboutShowController.about', args=[]}
-2023-02-15 20:43:50.209  INFO 17724 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: about
-2023-02-15 20:43:50.210  INFO 17724 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:44:01.201  INFO 17724 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
-2023-02-15 20:44:01.221  INFO 17724 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: search
-2023-02-15 20:44:01.222  INFO 17724 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:44:01.229 ERROR 17724 --- [http-nio-8080-exec-10] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-10] Exception processing template "search": An error happened during template parsing (template: "class path resource [templates/search.html]")
-
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/search.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "blog.firstPicture" (template: "search" - line 82, col 84)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
-	... 48 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.firstPicture" (template: "search" - line 82, col 84)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
-	at org.thymeleaf.engine.Model.process(Model.java:282)
-	at org.thymeleaf.engine.Model.process(Model.java:290)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
-	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
-	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
-	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
-	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
-	... 50 common frames omitted
-Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstPicture' cannot be found on object of type 'com.blogfirsttry.po.Blog' - maybe not public or not valid?
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	... 79 common frames omitted
-
-2023-02-15 20:44:01.230 ERROR 17724 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/search.html]")] with root cause
-
-org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'firstPicture' cannot be found on object of type 'com.blogfirsttry.po.Blog' - maybe not public or not valid?
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
-	at org.thymeleaf.engine.Model.process(Model.java:282)
-	at org.thymeleaf.engine.Model.process(Model.java:290)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
-	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
-	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
-	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
-	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
-2023-02-15 20:44:31.360  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
-2023-02-15 20:44:31.369  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: search
-2023-02-15 20:44:31.369  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:44:34.017  INFO 17724 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
-2023-02-15 20:44:34.030  INFO 17724 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: search
-2023-02-15 20:44:34.030  INFO 17724 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:44:42.990  INFO 17724 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.AboutShowController.about', args=[]}
-2023-02-15 20:44:42.990  INFO 17724 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: about
-2023-02-15 20:44:42.990  INFO 17724 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:44:43.810  INFO 17724 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
-2023-02-15 20:44:43.827  INFO 17724 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: tags
-2023-02-15 20:44:43.827  INFO 17724 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:44:48.921  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TypeShowController.types', args=[Page request [number: 0, size 4, sort: updateTime: DESC], -1, {}]}
-2023-02-15 20:44:48.947  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: types
-2023-02-15 20:44:48.947  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:44:50.641  INFO 17724 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
-2023-02-15 20:44:50.672  INFO 17724 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
-2023-02-15 20:44:50.672  INFO 17724 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:44:51.778  INFO 17724 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TypeShowController.types', args=[Page request [number: 0, size 4, sort: updateTime: DESC], -1, {}]}
-2023-02-15 20:44:51.800  INFO 17724 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: types
-2023-02-15 20:44:51.801  INFO 17724 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:45:36.997  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TypeShowController.types', args=[Page request [number: 0, size 4, sort: updateTime: DESC], -1, {}]}
-2023-02-15 20:45:37.027  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: types
-2023-02-15 20:45:37.027  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:45:39.193  INFO 17724 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
-2023-02-15 20:45:39.210  INFO 17724 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: tags
-2023-02-15 20:45:39.210  INFO 17724 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:45:41.527  INFO 17724 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.AboutShowController.about', args=[]}
-2023-02-15 20:45:41.527  INFO 17724 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: about
-2023-02-15 20:45:41.527  INFO 17724 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:45:47.910  INFO 17724 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
-2023-02-15 20:45:47.922  INFO 17724 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: search
-2023-02-15 20:45:47.922  INFO 17724 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:45:51.450  INFO 17724 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
-2023-02-15 20:45:51.462  INFO 17724 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: search
-2023-02-15 20:45:51.463  INFO 17724 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:45:55.473  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客东方闪电, {}]}
-2023-02-15 20:45:55.476  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: search
-2023-02-15 20:45:55.476  INFO 17724 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:45:56.901  INFO 17724 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.AboutShowController.about', args=[]}
-2023-02-15 20:45:56.901  INFO 17724 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: about
-2023-02-15 20:45:56.901  INFO 17724 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 20:46:00.649  INFO 17724 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 电风扇, {}]}
-2023-02-15 20:46:00.652  INFO 17724 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: search
-2023-02-15 20:46:00.652  INFO 17724 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 21:03:38.482  INFO 17724 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-02-15 21:03:38.482  INFO 17724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-02-15 21:03:38.482  INFO 17724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-02-15 21:03:42.998  INFO 7076 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Starting BlogFirstTryApplication using Java 1.8.0_311 on LAPTOP-61FD8MJ5 with PID 7076 (D:\IDEA\ideaProject\blog-First-Try\target\classes started by 拓森 in D:\IDEA\ideaProject\blog-First-Try)
-2023-02-15 21:03:42.999 DEBUG 7076 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
-2023-02-15 21:03:42.999  INFO 7076 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : The following 1 profile is active: "dev"
-2023-02-15 21:03:43.034  INFO 7076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-02-15 21:03:43.035  INFO 7076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-02-15 21:03:43.493  INFO 7076 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-02-15 21:03:43.543  INFO 7076 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 5 JPA repository interfaces.
-2023-02-15 21:03:44.134  INFO 7076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-02-15 21:03:44.140  INFO 7076 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-02-15 21:03:44.140  INFO 7076 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2023-02-15 21:03:44.202  INFO 7076 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-02-15 21:03:44.203  INFO 7076 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1168 ms
-2023-02-15 21:03:44.321  INFO 7076 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-02-15 21:03:44.354  INFO 7076 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-02-15 21:03:44.451  INFO 7076 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-02-15 21:03:44.509  INFO 7076 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-02-15 21:03:44.603  INFO 7076 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-02-15 21:03:44.616  INFO 7076 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-02-15 21:03:45.155  INFO 7076 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-02-15 21:03:45.161  INFO 7076 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-02-15 21:03:46.151  INFO 7076 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-02-15 21:03:46.438  INFO 7076 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-02-15 21:03:46.470  INFO 7076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-02-15 21:03:46.479  INFO 7076 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Started BlogFirstTryApplication in 3.878 seconds (JVM running for 4.655)
-2023-02-15 21:03:54.882  INFO 7076 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-02-15 21:03:54.882  INFO 7076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-02-15 21:03:54.884  INFO 7076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-02-15 21:03:54.909  INFO 7076 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
-2023-02-15 21:03:54.988  WARN 7076 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2023-02-15 21:03:55.023  WARN 7076 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2023-02-15 21:03:55.049  INFO 7076 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
-2023-02-15 21:03:55.049  INFO 7076 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 21:04:01.402  INFO 7076 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TypeShowController.types', args=[Page request [number: 0, size 4, sort: updateTime: DESC], -1, {}]}
-2023-02-15 21:04:01.441  INFO 7076 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: types
-2023-02-15 21:04:01.441  INFO 7076 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 21:04:03.343  INFO 7076 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
-2023-02-15 21:04:03.378  INFO 7076 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: tags
-2023-02-15 21:04:03.378  INFO 7076 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 21:04:04.926  INFO 7076 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.AboutShowController.about', args=[]}
-2023-02-15 21:04:04.928  INFO 7076 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: about
-2023-02-15 21:04:04.929  INFO 7076 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 21:04:08.476  INFO 7076 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
-2023-02-15 21:04:08.493  INFO 7076 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: search
-2023-02-15 21:04:08.493  INFO 7076 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 21:04:11.263  INFO 7076 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
-2023-02-15 21:04:11.325  INFO 7076 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
-2023-02-15 21:04:11.325  INFO 7076 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 21:04:11.640  INFO 7076 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
-2023-02-15 21:04:11.705  INFO 7076 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
-2023-02-15 21:04:11.705  INFO 7076 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
-2023-02-15 21:05:00.763  INFO 7076 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-02-15 21:05:00.765  INFO 7076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-02-15 21:05:00.770  INFO 7076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-21 00:56:02.722  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2023-03-21 00:56:02.754  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
+2023-03-21 00:56:02.754  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:56:04.719  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:56:04.736  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:56:04.736  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:56:05.045  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:56:05.071  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:56:05.071  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:56:25.508  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:56:25.523  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:56:25.523  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:56:25.794  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:56:25.830  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:56:25.830  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:57:21.834  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:57:21.847  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:57:21.847  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:57:22.071  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:57:22.100  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:57:22.100  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:58:31.818  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:58:31.828  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:58:31.829  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:58:32.038  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:58:32.064  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:58:32.064  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:59:21.226  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 00:59:21.235  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 00:59:21.235  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 00:59:21.446  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 00:59:21.477  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 00:59:21.477  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:00:15.102  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:00:15.111  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:00:15.111  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:00:15.541  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:00:15.586  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:00:15.586  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:01:12.783  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:01:12.800  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:01:12.800  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:01:13.281  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:01:13.322  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:01:13.323  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:02:34.836  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:02:34.843  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:02:34.844  INFO 37404 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:02:35.280  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:02:35.318  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:02:35.319  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:03:04.170  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:03:04.182  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:03:04.182  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:03:04.585  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:03:04.629  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:03:04.629  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:03:51.227  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:03:51.236  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:03:51.236  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:03:51.717  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:03:51.764  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:03:51.764  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:04:12.682  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:04:12.694  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:04:12.695  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:04:13.155  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:04:13.200  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:04:13.200  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:04:38.933  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:04:38.943  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:04:38.943  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:04:39.348  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:04:39.384  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:04:39.384  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:05:33.675  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:05:33.686  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:05:33.686  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:05:34.095  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:05:34.134  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:05:34.134  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:06:00.163  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:06:00.173  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:06:00.173  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:06:00.573  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:06:00.617  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:06:00.618  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:06:44.424  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:06:44.435  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:06:44.435  INFO 37404 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:06:44.662  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:06:44.691  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:06:44.691  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:07:53.967  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:07:53.985  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:07:53.986  INFO 37404 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:07:54.441  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:07:54.479  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:07:54.479  INFO 37404 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:08:33.801  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:08:33.816  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:08:33.816  INFO 37404 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:08:34.248  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:08:34.292  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:08:34.292  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:08:56.873  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:08:56.884  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:08:56.884  INFO 37404 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:08:57.285  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:08:57.331  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:08:57.331  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:11:50.804  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:11:50.818  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:11:50.818  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:11:51.224  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:11:51.266  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:11:51.267  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:12:28.098  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:12:28.106  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:12:28.106  INFO 37404 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:12:28.501  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:12:28.542  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:12:28.542  INFO 37404 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:12:44.216  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-21 01:12:44.227  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-21 01:12:44.227  INFO 37404 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:12:44.620  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-21 01:12:44.661  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-21 01:12:44.665  INFO 37404 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-21 01:13:19.389  INFO 37404 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 01:13:19.389  INFO 37404 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-21 01:13:19.398  INFO 37404 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

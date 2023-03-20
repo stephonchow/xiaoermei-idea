@@ -106,13 +106,6 @@
             </div>
           </div>
         </div>
-<!--        首图-->
-        <div class="field">
-          <div class="ui left labeled input">
-            <label class="ui blue basic label">首图</label>
-            <input type="text" th:value="*{firstPicture}" name="firstPicture" placeholder="首图引用地址">
-          </div>
-        </div>
 <!--          博客描述-->
           <div class="required field">
               <textarea name="description" th:text="*{description}" placeholder="博客描述，填写你的博客简介..." maxlength="200"></textarea>
@@ -216,13 +209,7 @@
             prompt: '标题：请输入博客分类'
           }]
         },
-        firstPicture : {
-          identifier: 'firstPicture',
-          rules: [{
-            type : 'empty',
-            prompt: '标题：请输入博客首图'
-          }]
-        },
+
         description : {
           identifier: 'description',
           rules: [{

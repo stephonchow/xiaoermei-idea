@@ -5,8 +5,16 @@ public class BlogQuery {
     private String title;
     private Long typeId;
     private boolean recommend;
-
+    private  boolean published;
     public BlogQuery() {
+    }
+
+    public boolean isPublished() {
+        return published;
+    }
+
+    public void setPublished(boolean published) {
+        this.published = published;
     }
 
     public String getTitle() {

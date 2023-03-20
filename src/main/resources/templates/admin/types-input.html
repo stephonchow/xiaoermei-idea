@@ -13,15 +13,12 @@
 <!--导航-->
 <nav th:replace="admin/_fragments :: menu(1)"  class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
 </nav>
-<div class="ui attached pointing menu">
-  <div class="ui container">
-    <div class="right menu">
-      <a href="#" th:href="@{/admin/types/input}" class="active item">新增</a>
-      <a href="#" th:href="@{/admin/types}" class="blue  item">列表</a>
-    </div>
-  </div>
+<div class="container-fluid" style="margin-top: 10px; border-bottom:2px solid #f0f0f0 ;">
+  <ul class="nav nav-tabs pull-right" style="margin-right: 5%;">
+    <li class="active"><a href="#" th:href="@{/admin/types/input}">发布</a></li>
+    <li><a href="#" th:href="@{/admin/types}">列表</a></li>
+  </ul>
 </div>
-
 <!--中间内容-->
 <div  class="m-container-small m-padded-tb-big">
   <div class="ui container">

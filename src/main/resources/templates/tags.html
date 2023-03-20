@@ -16,87 +16,97 @@
 </nav>
 
 <!--中间内容-->
-<div  class="m-container-small m-padded-tb-big animated fadeIn">
-  <div class="ui container">
-    <!--header-->
-    <div class="ui top attached segment">
-      <div class="ui middle aligned two column grid">
-        <div class="column">
-          <h3 class="ui blue header">标签</h3>
-        </div>
-        <div class="right aligned column">
-          共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(tags)}"> 14 </h2> 个
-        </div>
+<div class="container" style="width: 65%;">
+  <div class="row" style="margin-bottom: 10px;background-color: #fff;">
+    <!-- 首行 -->
+    <div class="row"
+         style="border-top: 1px solid silver;border-right: 1px solid silver;border-left: 1px solid silver;border-radius: 3px 3px 0 0;margin: 0 auto;padding: 10px 0;">
+      <div class="col-sm-2 text-left media-left">
+        <h4 style="display: inline-block;">标签</h4>
+      </div>
+      <div class="col-sm-2 col-sm-offset-8 text-right media-right">
+        共 <h4 class="text-primary" style="display: inline-block;" th:text="${#arrays.length(tags)}"> 14 </h4> 个
       </div>
     </div>
-
-    <div class="ui attached segment m-padded-tb-large">
-      <a href="#" th:href="@{/tags/{id}(id=${tag.id})}"  class="ui basic left pointing large label m-margin-tb-tiny" th:classappend="${tag.id==activeTagId} ? 'blue'" th:each="tag : ${tags}">
-        <span th:text="${tag.name}">方法论</span> <div class="detail" th:text="${#arrays.length(tag.blogs)}">23</div>
-      </a>
+    <!-- 分类项目 -->
+    <div class="row" style="border: 1px solid silver;border-radius: 0 0 3px 3px;margin: 0 auto;">
+      <ul class="col-md-12 nav nav-pills" style="margin:5px;">
+        <li class="" style="display: flex;justify-content: center;margin-right: 5px" th:each="tag : ${tags}"><!-- active -->
+          <a class="text-muted" href="#" th:href="@{/tags/{id}(id=${tag.id})}" style="padding: 1px 9px;margin: 6px 6px;border: 1px solid silver;" th:classappend="${tag.id==activeTagId} ? 'text-primary'" th:text="${tag.name}">首页<span>&#160&#160</span>
+          </a>
+          <div class="ui basic left pointing label" style="font-size:6px;height: 80%;margin: 0 auto" th:classappend="${tag.id==activeTagId} ? 'blue'" th:text="${#arrays.length(tag.blogs)}">24</div>
+        </li>
+      </ul>
     </div>
-
-    <div class="ui top attached blue segment">
-      <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${page.content}">
-        <div class="ui middle aligned mobile reversed stackable grid" >
-          <div class="eleven wide column">
-            <h3 class="ui header" ><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black" th:text="${blog.title}">你真的理解什么是财富自由吗?</a></h3>
-            <p class="m-text" th:text="|${blog.description}......|">正确做好任何一件事情的前提是清晰、正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过，只是大家都那么做而已…...</p>
-            <div class="ui grid">
-              <div class="row">
-                <div class="eleven wide column">
-                  <div class="ui mini horizontal link list">
-                    <div class="item">
-                      <img src="https://unsplash.it/100/100?image=1005" th:src="@{${blog.user.avatar}}"  alt="" class="ui avatar image">
-                      <div class="content"><a href="#" class="header" th:text="${blog.user.nickname}" >李仁密</a></div>
-                    </div>
-                    <div class="item">
-                      <i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2017-10-01</span>
-                    </div>
-                    <div class="item">
-                      <i class="eye icon"></i> <span th:text="${blog.views}">2342</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="right aligned five wide column">
-                  <a href="#" target="_blank" class="ui blue basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">认知升级</a>
-                </div>
+  </div>
+  <!-- 博客列表和分页 -->
+  <div class="row">
+    <div class="col-md-12"
+         style="margin-right:-20px; background-color: #fff; border-left: 1px solid silver;border-right: 1px solid silver;border-bottom: 1px solid silver; border-radius: 3px;border-top: 2px solid deepskyblue;">
+      <div class="row" th:each="blog : ${page.content}" th:if="${blog.published}"
+           style="display: flex;justify-content: center;align-items: center; margin:1.5rem 0;padding-bottom: 1.5rem; background-color: #ffffff;border-bottom: 1px solid silver;">
+        <div class="bg-secondary pull-left" style="flex: 8;padding:15px;height:100%;">
+          <div class="row">
+            <h4><a href="#" target="_blank" th:href="@{/blog/{id}(id=${blog.id})}" th:text="${blog.title}">你真的理解什么是财富自由吗?</a>
+              <div class="pull-right" style="display: inline-block;">
+                <a href="#" target="_blank" class=""
+                   style="padding:2px;border: 1px solid skyblue;border-radius: 3px;font-size: small;" th:text="${blog.type.name}">认知升级</a>
               </div>
-              <div class="row">
-                <div class="column">
-                  <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui  basic left pointing label m-padded-mini m-text-thin" th:classappend="${tag.id==activeTagId} ? 'blue'" th:each="tag : ${blog.tags}" th:text="${tag.name}">方法论</a>
-                </div>
+            </h4>
+
+            <p class="samll" th:text="|${blog.description}......|">
+              正确做好任何一件事情的前提是清晰、正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过，只是大家都那么做而已…...</p>
+          </div>
+
+          <div class="row" style="margin-top: 1rem">
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="javascript:;">
+                  <img src="../static/images/me.png" th:src="@{${blog.user.avatar}}" class="img-circle media-object"
+                       style="width: 16px;height: 16px;">
+                </a>
+              </div>
+              <div class="media-body">
+                <h5 class="media-heading">
+                  <a href="javascript:;" target="_blank" th:text="${blog.user.nickname}">nickname</a>
+                  <i class="iconfont icon-calendar-v2" style="font-size: small;"></i>
+                  <span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">
+                      2017-08-05
+                      11:09:10</span>
+                  <i class="iconfont icon-liulan" style="font-size: small;"></i>
+                  <span th:text="${blog.views}">234</span>
+                </h5>
+
               </div>
             </div>
           </div>
-
-          <div class="five wide column">
-            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
-              <img src="https://unsplash.it/800/450?image=1005" th:src="@{/images/me.png}"  alt="" class="ui rounded image">
-            </a>
+          <div class="row" style="padding-top: 15px;">
+            <div class="column">
+              <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui  basic left pointing label m-padded-mini m-text-thin" th:each="tag : ${blog.tags}" th:text="${tag.name}">方法论</a>
+            </div>
           </div>
-
+        </div>
+        <div class=" bg-dark pull-right" style="flex: 4;">
+          <div class="row text-center" th:href="@{/blog/{id}(id=${blog.id})}">
+            <img src="../static/images/me.png" th:src="@{/images/me.png}" alt="" class="img-rounded" style="width: 80%;height:80%">
+          </div>
         </div>
       </div>
 
-    </div>
-
-    <!--footer-->
-    <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
-      <div class="ui middle aligned two column grid">
-        <div class="column">
-          <a href="#" th:href="@{/tags/{id}?page={page}(id=${activeTagId},page=${page.number}-1)}"  th:unless="${page.first}" class="ui mini blue basic button">上一页</a>
-        </div>
-        <div class="right aligned column">
-          <a href="#" th:href="@{/tags/{id}?page={page}(id=${activeTagId},page=${page.number}+1)}"  th:unless="${page.last}" class="ui mini blue basic button">下一页</a>
-        </div>
+      <div class=" " th:if="${page.totalPages}>1">
+        <ul class="pagination" style="margin: 5px 0;" >
+          <li><a href="#" th:href="@{/tags/{id}?page={page}(id=${activeTagId},page=${page.number}-1)}"  th:unless="${page.first}">上一页</a></li>
+          <li><a href="#" th:href="@{/tags/{id}?page={page}(id=${activeTagId},page=${page.number}+1)}"  th:unless="${page.last}">下一页</a></li>
+        </ul>
       </div>
     </div>
-
   </div>
+
 </div>
-  <br>
-  <br>
+<br>
+<br>
+<br><br>
+<br>
   <!--底部footer-->
   <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
   </footer>

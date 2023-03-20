@@ -1,8 +1,9 @@
 package com.blogfirsttry.po;
 
 import org.hibernate.annotations.Proxy;
-
+import com.blogfirsttry.po.QuickCommentClass;
 import javax.persistence.*;
+import java.sql.Struct;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -31,18 +32,16 @@ public class Blog {
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;//更新时间
     private boolean adminComment;
+//    private QuickCommentClass quickComment = new QuickCommentClass();//快捷回复
     @ManyToOne//多个博客对应一个分类
     //many的那端是关系维护端
     private Type type;
-//
 //    @ManyToMany(cascade = {CascadeType.MERGE})
     @ManyToMany(fetch = FetchType.EAGER)
     //博客和标签是多对多，并且由blog维护
     //添加cascade = {CascadeType.PERSIST}后新增
     // 一个tag，会将该tag添加到数据库
     private List<Tag> tags = new ArrayList<>();
-//
-//
     @ManyToOne
     private User user;
 //

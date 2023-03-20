@@ -44,12 +44,9 @@ public class BlogServiceImpl implements BlogService {
         blogRepository.updateViews(id);
         return b;
     }
-
-
+//    获取博客
     @Override
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
-
-//        public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
         return blogRepository.findAll(new Specification<Blog>() {
             @Override
             public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {

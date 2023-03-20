@@ -1,0 +1,318 @@
+2023-03-19 11:16:53.886  INFO 36588 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Starting BlogFirstTryApplication using Java 1.8.0_311 on LAPTOP-61FD8MJ5 with PID 36588 (D:\IDEA\ideaProject\blog-First-Try\target\classes started by 拓森 in D:\IDEA\ideaProject\blog-First-Try)
+2023-03-19 11:16:53.892 DEBUG 36588 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-03-19 11:16:53.893  INFO 36588 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : The following 1 profile is active: "dev"
+2023-03-19 11:16:53.978  INFO 36588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-19 11:16:53.979  INFO 36588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-19 11:16:54.996  INFO 36588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-19 11:16:55.074  INFO 36588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 5 JPA repository interfaces.
+2023-03-19 11:16:56.061  INFO 36588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-19 11:16:56.070  INFO 36588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-19 11:16:56.070  INFO 36588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-03-19 11:16:56.213  INFO 36588 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-19 11:16:56.214  INFO 36588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2233 ms
+2023-03-19 11:16:56.466  INFO 36588 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-19 11:16:56.533  INFO 36588 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-19 11:16:56.739  INFO 36588 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-19 11:16:56.883  INFO 36588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-19 11:16:57.038  INFO 36588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-19 11:16:57.060  INFO 36588 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-19 11:16:57.992  INFO 36588 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-19 11:16:58.000  INFO 36588 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 11:16:59.287  INFO 36588 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-19 11:16:59.614  INFO 36588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-19 11:16:59.658  INFO 36588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-19 11:16:59.669  INFO 36588 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Started BlogFirstTryApplication in 6.637 seconds (JVM running for 9.472)
+2023-03-19 11:17:20.097  INFO 36588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-19 11:17:20.097  INFO 36588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-19 11:17:20.099  INFO 36588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-19 11:17:20.127  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2023-03-19 11:17:20.227  WARN 36588 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2023-03-19 11:17:20.268  WARN 36588 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2023-03-19 11:17:20.295  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
+2023-03-19 11:17:20.295  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 11:17:27.744  INFO 36588 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TypeShowController.types', args=[Page request [number: 0, size 4, sort: updateTime: DESC], 1, {}]}
+2023-03-19 11:17:27.783  INFO 36588 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: types
+2023-03-19 11:17:27.783  INFO 36588 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 11:17:37.577  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/tags/26', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 26, {}]}
+2023-03-19 11:17:37.616  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: tags
+2023-03-19 11:17:37.617  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 11:18:22.839  INFO 36588 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/tags/26', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 26, {}]}
+2023-03-19 11:18:22.897  INFO 36588 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: tags
+2023-03-19 11:18:22.897  INFO 36588 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 11:18:28.233  INFO 36588 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.AboutShowController.about', args=[]}
+2023-03-19 11:18:28.235  INFO 36588 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: about
+2023-03-19 11:18:28.235  INFO 36588 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 11:18:31.910  INFO 36588 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2023-03-19 11:18:31.966  INFO 36588 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
+2023-03-19 11:18:31.966  INFO 36588 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 11:19:41.787 ERROR 36588 --- [http-nio-8080-exec-1] c.b.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/admin/blogs, Exception: org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2023-03-19 11:19:41.789  WARN 36588 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!]
+2023-03-19 11:42:23.716 ERROR 36588 --- [http-nio-8080-exec-6] c.b.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/admin/blogs, Exception: org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2023-03-19 11:42:23.718  WARN 36588 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!]
+2023-03-19 12:57:59.406  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2023-03-19 12:57:59.441  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
+2023-03-19 12:57:59.441  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 12:58:22.201  INFO 36588 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2023-03-19 12:58:22.238  INFO 36588 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
+2023-03-19 12:58:22.238  INFO 36588 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 13:08:45.366  WARN 36588 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1451, SQLState: 23000
+2023-03-19 13:08:45.366 ERROR 36588 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`blog-dev`.`t_comment`, CONSTRAINT `FKke3uogd04j4jx316m1p51e05u` FOREIGN KEY (`blog_id`) REFERENCES `t_blog` (`id`))
+2023-03-19 13:08:45.374  INFO 36588 --- [http-nio-8080-exec-4] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-03-19 13:08:45.386 ERROR 36588 --- [http-nio-8080-exec-4] c.b.handler.ControllerExceptionHandler   : Request URL: http://localhost:8080/admin/blogs/34/delete, Exception: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-03-19 13:08:45.389  WARN 36588 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2023-03-19 13:09:24.383  INFO 36588 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2023-03-19 13:09:24.413  INFO 36588 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
+2023-03-19 13:09:24.413  INFO 36588 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 13:09:27.259  INFO 36588 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/68', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[68, {}]}
+2023-03-19 13:09:27.391  INFO 36588 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 13:09:27.391  INFO 36588 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 13:09:27.736  INFO 36588 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/68', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[68, {}]}
+2023-03-19 13:09:27.766  INFO 36588 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 13:09:27.766  INFO 36588 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 13:10:24.095  INFO 36588 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2023-03-19 13:10:24.120  INFO 36588 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
+2023-03-19 13:10:24.120  INFO 36588 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 13:11:22.507  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 13:11:22.527  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 13:11:22.527  INFO 36588 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 13:11:22.854  INFO 36588 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 13:11:22.886  INFO 36588 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 13:11:22.886  INFO 36588 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 13:17:19.090  INFO 36588 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 13:17:19.100  INFO 36588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-19 13:17:19.134  INFO 36588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-19 22:17:09.549  INFO 31044 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Starting BlogFirstTryApplication using Java 1.8.0_311 on LAPTOP-61FD8MJ5 with PID 31044 (D:\IDEA\ideaProject\blog-First-Try\target\classes started by 拓森 in D:\IDEA\ideaProject\blog-First-Try)
+2023-03-19 22:17:09.550 DEBUG 31044 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-03-19 22:17:09.550  INFO 31044 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : The following 1 profile is active: "dev"
+2023-03-19 22:17:09.590  INFO 31044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-19 22:17:09.591  INFO 31044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-19 22:17:10.119  INFO 31044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-19 22:17:10.176  INFO 31044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 5 JPA repository interfaces.
+2023-03-19 22:17:10.882  INFO 31044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-19 22:17:10.891  INFO 31044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-19 22:17:10.892  INFO 31044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-03-19 22:17:10.961  INFO 31044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-19 22:17:10.962  INFO 31044 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1371 ms
+2023-03-19 22:17:11.104  INFO 31044 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-19 22:17:11.147  INFO 31044 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-19 22:17:11.267  INFO 31044 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-19 22:17:11.353  INFO 31044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-19 22:17:11.461  INFO 31044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-19 22:17:11.476  INFO 31044 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-19 22:17:12.116  INFO 31044 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-19 22:17:12.124  INFO 31044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 22:17:13.174  INFO 31044 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-19 22:17:13.504  INFO 31044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-19 22:17:13.538  INFO 31044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-19 22:17:13.547  INFO 31044 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Started BlogFirstTryApplication in 4.509 seconds (JVM running for 5.612)
+2023-03-19 22:17:13.601  INFO 31044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-19 22:17:13.601  INFO 31044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-19 22:17:13.602  INFO 31044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-19 22:17:15.007  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:17:15.126  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:17:15.127  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:17:26.787  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2023-03-19 22:17:26.823  WARN 31044 --- [http-nio-8080-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2023-03-19 22:17:26.854  WARN 31044 --- [http-nio-8080-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2023-03-19 22:17:26.880  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
+2023-03-19 22:17:26.881  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:17:29.141  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:17:29.165  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:17:29.165  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:26:18.864  INFO 31044 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:26:18.882  INFO 31044 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:26:18.882  INFO 31044 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:26:28.561  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:26:28.586  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:26:28.586  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:27:17.088  INFO 31044 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:27:17.105  INFO 31044 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:27:17.105  INFO 31044 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:28:56.296  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:28:56.311  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:28:56.311  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:29:01.188  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.AboutShowController.about', args=[]}
+2023-03-19 22:29:01.190  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: about
+2023-03-19 22:29:01.190  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:29:05.324  INFO 31044 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.AboutShowController.about', args=[]}
+2023-03-19 22:29:05.325  INFO 31044 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: about
+2023-03-19 22:29:05.325  INFO 31044 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:29:46.118  INFO 31044 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:29:46.131  INFO 31044 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:29:46.131  INFO 31044 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:29:48.843  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.AboutShowController.about', args=[]}
+2023-03-19 22:29:48.843  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: about
+2023-03-19 22:29:48.843  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:33:58.840  INFO 31044 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:33:58.856  INFO 31044 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:33:58.856  INFO 31044 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:37:02.869  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:37:02.884  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:37:02.884  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:55:54.776  INFO 31044 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:55:54.794  INFO 31044 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:55:54.794  INFO 31044 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:55:55.211  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 22:55:55.313  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 22:55:55.313  INFO 31044 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:56:22.941  INFO 31044 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:56:22.956  INFO 31044 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:56:22.956  INFO 31044 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:56:23.381  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 22:56:23.443  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 22:56:23.444  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:56:27.469  INFO 31044 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:56:27.482  INFO 31044 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:56:27.482  INFO 31044 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:56:27.877  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 22:56:27.939  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 22:56:27.939  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:57:16.838  INFO 31044 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:57:16.855  INFO 31044 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:57:16.856  INFO 31044 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:57:17.259  INFO 31044 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 22:57:17.323  INFO 31044 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 22:57:17.323  INFO 31044 --- [http-nio-8080-exec-6] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:58:12.669  INFO 31044 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:58:12.684  INFO 31044 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:58:12.684  INFO 31044 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:58:13.102  INFO 31044 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 22:58:13.150  INFO 31044 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 22:58:13.151  INFO 31044 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:59:52.511  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 22:59:52.525  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 22:59:52.526  INFO 31044 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 22:59:53.168  INFO 31044 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 22:59:53.249  INFO 31044 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 22:59:53.250  INFO 31044 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:00:16.227  INFO 31044 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:00:16.247  INFO 31044 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:00:16.247  INFO 31044 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:00:17.433  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 23:00:17.509  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 23:00:17.509  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:01:28.327  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:01:28.345  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:01:28.346  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:01:29.109  INFO 31044 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 23:01:29.183  INFO 31044 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 23:01:29.183  INFO 31044 --- [http-nio-8080-exec-4] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:02:33.881  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:02:33.891  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:02:33.891  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:02:34.285  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 23:02:34.340  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 23:02:34.340  INFO 31044 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:02:56.359  INFO 31044 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:02:56.379  INFO 31044 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:02:56.381  INFO 31044 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:02:56.686  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 23:02:56.718  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 23:02:56.718  INFO 31044 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:03:17.239  INFO 31044 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 23:03:17.241  INFO 31044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-19 23:03:17.243  INFO 31044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-19 23:03:20.593  INFO 35112 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Starting BlogFirstTryApplication using Java 1.8.0_311 on LAPTOP-61FD8MJ5 with PID 35112 (D:\IDEA\ideaProject\blog-First-Try\target\classes started by 拓森 in D:\IDEA\ideaProject\blog-First-Try)
+2023-03-19 23:03:20.594 DEBUG 35112 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-03-19 23:03:20.595  INFO 35112 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : The following 1 profile is active: "dev"
+2023-03-19 23:03:20.630  INFO 35112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-19 23:03:20.630  INFO 35112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-19 23:03:21.117  INFO 35112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-19 23:03:21.168  INFO 35112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2023-03-19 23:03:21.798  INFO 35112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-19 23:03:21.806  INFO 35112 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-19 23:03:21.806  INFO 35112 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-03-19 23:03:21.873  INFO 35112 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-19 23:03:21.874  INFO 35112 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1243 ms
+2023-03-19 23:03:22.000  INFO 35112 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-19 23:03:22.048  INFO 35112 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-19 23:03:22.171  INFO 35112 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-19 23:03:22.260  INFO 35112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-19 23:03:22.386  INFO 35112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-19 23:03:22.401  INFO 35112 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-19 23:03:23.024  INFO 35112 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-19 23:03:23.030  INFO 35112 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 23:03:24.058  INFO 35112 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-19 23:03:24.364  INFO 35112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-19 23:03:24.396  INFO 35112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-19 23:03:24.405  INFO 35112 --- [restartedMain] c.blogfirsttry.BlogFirstTryApplication   : Started BlogFirstTryApplication in 4.395 seconds (JVM running for 6.025)
+2023-03-19 23:03:32.060  INFO 35112 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-19 23:03:32.060  INFO 35112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-19 23:03:32.061  INFO 35112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-19 23:03:32.090  INFO 35112 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2023-03-19 23:03:32.196  WARN 35112 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2023-03-19 23:03:32.237  WARN 35112 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2023-03-19 23:03:32.267  INFO 35112 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
+2023-03-19 23:03:32.267  INFO 35112 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:03:55.936  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/68', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[68, {}]}
+2023-03-19 23:03:55.984  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:03:55.985  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:03:56.270  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/68', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[68, {}]}
+2023-03-19 23:03:56.284  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 23:03:56.284  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:04:08.574  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:04:08.599  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:04:08.599  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:04:08.906  INFO 35112 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 23:04:08.944  INFO 35112 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 23:04:08.944  INFO 35112 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:07:48.308  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:07:48.323  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:07:48.323  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:09:26.067  INFO 35112 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:09:26.083  INFO 35112 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:09:26.084  INFO 35112 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:20:42.905  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:20:42.921  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:20:42.921  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:23:00.009  INFO 35112 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:23:00.032  INFO 35112 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:23:00.033  INFO 35112 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:24:23.080  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:24:23.095  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:24:23.095  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:24:52.458  INFO 35112 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:24:52.485  INFO 35112 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:24:52.486  INFO 35112 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:27:26.566  INFO 35112 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/68', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[68, {}]}
+2023-03-19 23:27:26.578  INFO 35112 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:27:26.579  INFO 35112 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:27:30.572  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/30', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[30, {}]}
+2023-03-19 23:27:30.592  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:27:30.593  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:27:44.427  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:27:44.449  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:27:44.449  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:30:12.576  INFO 35112 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:30:12.590  INFO 35112 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:30:12.590  INFO 35112 --- [http-nio-8080-exec-7] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:30:12.846  INFO 35112 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 23:30:12.881  INFO 35112 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 23:30:12.882  INFO 35112 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:30:32.717  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.post', args=[Comment{id=null, nickname='测试登录', email='123456@666.com', content='杀鸡撒', avatar='null', createTime=null, blog=Blog{id=35, title='null', content='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, published=false, recommend=false, createTime=null, updateTime=null, adminComment=false, type=null, tags=[], user=null, comments=[], tagIds='null', description='null'}, replyComments=[], parentComment=Comment{id=59, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@1f0947e8]}
+2023-03-19 23:30:32.734  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: redirect:/comments/35
+2023-03-19 23:30:32.734  INFO 35112 --- [http-nio-8080-exec-3] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:30:32.744  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 23:30:32.766  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 23:30:32.766  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:31:20.583  INFO 35112 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:31:20.597  INFO 35112 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:31:20.597  INFO 35112 --- [http-nio-8080-exec-8] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:31:20.857  INFO 35112 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 23:31:20.921  INFO 35112 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 23:31:20.921  INFO 35112 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:36:38.311  INFO 35112 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:36:38.330  INFO 35112 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:36:38.330  INFO 35112 --- [http-nio-8080-exec-2] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:36:38.549  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 23:36:38.583  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 23:36:38.583  INFO 35112 --- [http-nio-8080-exec-9] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:43:34.894  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2023-03-19 23:43:34.925  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: index
+2023-03-19 23:43:34.925  INFO 35112 --- [http-nio-8080-exec-5] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:43:37.577  INFO 35112 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.IndexController.blog', args=[35, {}]}
+2023-03-19 23:43:37.601  INFO 35112 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog
+2023-03-19 23:43:37.602  INFO 35112 --- [http-nio-8080-exec-10] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
+2023-03-19 23:43:37.918  INFO 35112 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doBefore------ Request: RequestLog{url='http://localhost:8080/comments/35', ip='0:0:0:0:0:0:0:1', classMethod='com.blogfirsttry.web.CommentController.comments', args=[35, {}]}
+2023-03-19 23:43:37.944  INFO 35112 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfterReturn------ Result: blog :: commentList
+2023-03-19 23:43:37.944  INFO 35112 --- [http-nio-8080-exec-1] com.blogfirsttry.aspect.LogAspect        : ------doAfter------
